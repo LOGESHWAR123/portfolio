@@ -89,7 +89,6 @@ export const pageMetadata: Record<string, PageMeta> = {
       'software',
     ],
     ogImage: '/meta/projects.png',
-    twitterCard: 'summary_large_image',
   },
 
   // Blog page
@@ -105,7 +104,6 @@ export const pageMetadata: Record<string, PageMeta> = {
       'technical writing',
     ],
     ogImage: '/meta/blogs.png',
-    twitterCard: 'summary_large_image',
   },
 
   // Resume page
@@ -121,7 +119,6 @@ export const pageMetadata: Record<string, PageMeta> = {
       'download',
     ],
     ogImage: '/meta/resume.png',
-    twitterCard: 'summary',
   },
 
   // Gears page
@@ -138,7 +135,6 @@ export const pageMetadata: Record<string, PageMeta> = {
       'development environment',
     ],
     ogImage: '/meta/gears.png',
-    twitterCard: 'summary_large_image',
   },
 
   // Setup page
@@ -155,7 +151,6 @@ export const pageMetadata: Record<string, PageMeta> = {
       'guide',
     ],
     ogImage: '/meta/setup.png',
-    twitterCard: 'summary_large_image',
   },
 };
 
@@ -194,7 +189,6 @@ export function generateMetadata(pathname: string) {
       card: pageMeta.twitterCard || 'summary_large_image',
       title: pageMeta.title,
       description: pageMeta.description,
-      creator: siteConfig.author.twitter,
       images: [pageMeta.ogImage || siteConfig.ogImage],
     },
     robots: {

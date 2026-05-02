@@ -47,7 +47,7 @@ export async function GET(req: Request) {
       ...data.data.matchedUser,
       contest: data.data.userContestRanking,
     });
-  } catch (error) {
+  } catch{
     return Response.json(
       { error: 'Failed to fetch LeetCode data' },
       { status: 500 }
